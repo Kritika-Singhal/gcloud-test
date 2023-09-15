@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/eng-genius-224716/first_app', './helloworld']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/eng-genius-224716/first_app']
